@@ -1,0 +1,32 @@
+# alacritty.toml
+# man 5 alacritty (>0.13) for full config manual
+
+import = ["~/.config/alacritty/themes/themes/gruvbox_dark.toml"]
+
+[shell]
+program               = "/usr/bin/zsh"
+args                  = [ "--login", ]
+
+[env]
+TERM                  = "xterm-256color"
+
+
+[window]
+padding               = { x = 2, y = 2 }
+decorations           = "None"
+opacity               = 0.9
+blur                  = true
+
+[scrolling]
+history               = 65535
+
+[font]
+normal                = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold                  = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic                = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic           = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+offset                = { x = 0, y = 0 }
+glyph_offset          = { x = 0, y = 0 }
+
+# keep rest of your config (colors, cursor, keyboard, etc.)
+
